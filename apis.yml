@@ -1,8 +1,26 @@
 aid: timeblocks
 name: TimeBlocks
-description: TimeBlocks is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  TimeBlocks is a consumer calendar and personal scheduling mobile app developed by Day2Life Inc.,
+  a South Korean company backed by 500 Global. Marketed as Korea's #1 decoration calendar, it brings
+  calendar, to-do, memo, and habit tracking together in a single view, with patented drag-and-drop
+  time-block scheduling (US Patent 10,409,474 B2), roughly 1,000 customization items (themes, stickers,
+  fonts), shared and group calendars with real-time notifications, seven home-screen widgets, and
+  cloud sync across devices. It is a native iOS and Android app; as of this enrichment pass it
+  publishes no public developer API, SDK, or API documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/timeblocks/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://img.timeblocks.com/landing-page/asset/images/favicon.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Calendar
+- Scheduling
+- Productivity
+- Mobile App
+- Consumer
+- Time Management
+- To-Do
+- South Korea
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/timeblocks-domain-security.yml
 - type: Website
+  url: https://timeblocks.com
+- type: CorporateWebsite
   url: https://day2life.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
